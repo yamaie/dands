@@ -1,5 +1,5 @@
 body{
-  line-height:1em;
+  line-height:1.5rem;
   letter-spacing:normal;
   scrollbar-arrow-color:white;
   scrollbar-face-color:gray;
@@ -60,14 +60,14 @@ h1, h2, h3, h4 {
   font-weight: normal;
 }
 
-h1{font-size:20rem;}
-h2{font-size:18rem;}
+h1{font-size:2rem;}
+h2{font-size:1.8rem;}
 h3{
-  font-size:13rem;
+  font-size:1.3rem;
   font-color:#666666;
 }
 h4{
-  font-size:12rem;
+  font-size:1.2rem;
   font-color:#666666;
 }
 
@@ -78,8 +78,7 @@ h3::before,h4::before {
 p{
   color:#666666;
   font-family:Century Gothic;
-  font-size:12rem;
-  line-height: 1.5
+  font-size:1.2rem;
 }
 
 p.novel{line-height:2.0;}
@@ -88,7 +87,6 @@ li {
   list-style: none;    /* デフォルトの黒点を消す */
   position: relative;  /* 基準位置を設定 */
   padding-left: 1.2rem; /* 点の分の余白を空ける */
-  line-height: 1.5;
 }
 
 li:not(.update li)::before {
