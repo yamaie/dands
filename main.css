@@ -8,6 +8,7 @@ body{
   scrollbar-track-color:white;
   scrollbar-shadow-color:white;
   scrollbar-darkshadow-color:gray;
+  font-size:12px;
 }
 
 div.wrapper{
@@ -81,6 +82,7 @@ p{
 
 p.novel{line-height:2.0;}
 
+ul{padding-left: 0em;}
 li {
   list-style: none;    /* デフォルトの黒点を消す */
   position: relative;  /* 基準位置を設定 */
