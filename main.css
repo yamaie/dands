@@ -89,7 +89,7 @@ li {
   padding-left: 1.2em; /* 点の分の余白を空ける */
 }
 
-li::before {
+li:not(.update li)::before {
   content: "・";       /* 代わりの黒点を指定 */
   position: absolute;  /* 絶対配置 */
   left: 0;             /* 左端に配置 */
