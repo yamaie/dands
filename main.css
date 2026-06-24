@@ -79,14 +79,16 @@ p{
   color:#666666;
   font-family:Century Gothic;
   font-size:12rem;
+  line-height: 1.5
 }
 
-p.novel{line-height:2em;}
+p.novel{line-height:2.0;}
 
 li {
   list-style: none;    /* デフォルトの黒点を消す */
   position: relative;  /* 基準位置を設定 */
-  padding-left: 1.2em; /* 点の分の余白を空ける */
+  padding-left: 1.2rem; /* 点の分の余白を空ける */
+  line-height: 1.5;
 }
 
 li:not(.update li)::before {
@@ -94,5 +96,5 @@ li:not(.update li)::before {
   position: absolute;  /* 絶対配置 */
   left: 0;             /* 左端に配置 */
   font-weight: 100;    /* 文字の太さを一番細くする */
-  font-size: 1em;      /* 大きさを調整 */
+  font-size: 1rem;      /* 大きさを調整 */
 }
