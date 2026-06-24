@@ -55,8 +55,15 @@ br{
 letter-spacing:normal;
 }
 
-p.title{
+h1{
 font-size:20px;
+font-family:Century Gothic;
+color:#000000;
+margin: 1em 0;
+}
+
+h2｛
+font-size:18px;
 font-family:Century Gothic;
 color:#000000;
 margin: 1em 0;
