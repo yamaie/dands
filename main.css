@@ -55,37 +55,17 @@ br{
 letter-spacing:normal;
 }
 
-h1{
-font-size:20px;
-font-family:Century Gothic;
-color:#000000;
-margin: 1em 0;
-font-weight: normal;
-}
-
-h2｛
-font-size:18px;
-font-family:Century Gothic;
-color:#000000;
-margin: 1em 0;
-font-weight: normal;
-}
-
-h3{
-  font-size:15px;
+h1, h2, h3, h4 {
   font-family:Century Gothic;
   color:#000000;
   margin: 1em 0;
   font-weight: normal;
 }
 
-h4{
-  font-size:14px;
-  font-family:Century Gothic;
-  color:#000000;
-  margin: 1em 0;
-  font-weight: normal;
-}
+h1{font-size:20px;}
+h2{font-size:18px;}
+h3{font-size:15px;}
+h4{font-size:14px;}
 
 h3::before,h4::before {
   content: "*";
@@ -99,8 +79,4 @@ font-family:Century Gothic;
 
 p.novel{
 line-height:1.5em;
-}
-
-li{
-  
 }
