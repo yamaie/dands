@@ -102,3 +102,10 @@ li:not(.update li)::before {
   font-weight: 100;    /* 文字の太さを一番細くする */
   font-size: 1em;      /* 大きさを調整 */
 }
+
+hr {
+  border: none;
+  border-top: 1px dashed #999;
+  width: 50%;           /* 画面幅の半分にして主張を抑える */
+  margin: 2em auto;     /* 上下にしっかり余白を取る */
+}
