@@ -66,10 +66,7 @@ h1, h2, h3, h4, h5 {
 
 h1{font-size:1.5em;}
 h2{font-size:1.2em;}
-h3{
-  font-color:#666666;
-}
-h4{
+h3, h4, h5{
   font-color:#666666;
 }
 
