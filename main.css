@@ -44,8 +44,8 @@ a:hover{
   text-decoration:none;
   color:#333333;
   position:relative;
-  top:2pt;
-  left:1pt;
+  top:2rem;
+  left:1rem;
   visibility:visible;
   float:none;
   clear:none;
@@ -60,14 +60,14 @@ h1, h2, h3, h4 {
   font-weight: normal;
 }
 
-h1{font-size:20pt;}
-h2{font-size:18pt;}
+h1{font-size:20rem;}
+h2{font-size:18rem;}
 h3{
-  font-size:13pt;
+  font-size:13rem;
   font-color:#666666;
 }
 h4{
-  font-size:12.5pt;
+  font-size:12rem;
   font-color:#666666;
 }
 
@@ -79,6 +79,6 @@ p{
   color:#666666;
   font-family:Century Gothic;
 }
-p.main{font-size:12pt;}
+p.main{font-size:12rem;}
 
 p.novel{line-height:2em;}
