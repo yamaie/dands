@@ -90,6 +90,7 @@ li {
   list-style: none;    /* デフォルトの黒点を消す */
   position: relative;  /* 基準位置を設定 */
   padding-left: 1em; /* 点の分の余白を空ける */
+  font-color:#666666;
 }
 
 li:not(.update li)::before {
@@ -103,6 +104,5 @@ li:not(.update li)::before {
 hr {
   border: none;
   border-top: 1px dashed #999;
-  width: 50%;           /* 画面幅の半分にして主張を抑える */
   margin: 2em auto;     /* 上下にしっかり余白を取る */
 }
