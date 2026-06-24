@@ -67,7 +67,7 @@ h1, h2, h3, h4, h5 {
 h1{font-size:1.5em;}
 h2{font-size:1.2em;}
 h3, h4, h5{
-  font-color:#666666;
+  color:#666666;
   font-size:1em;
 }
 
@@ -91,7 +91,7 @@ li {
   list-style: none;    /* デフォルトの黒点を消す */
   position: relative;  /* 基準位置を設定 */
   padding-left: 1em; /* 点の分の余白を空ける */
-  font-color:#666666;
+  color:#666666;
 }
 
 li:not(.update li)::before {
