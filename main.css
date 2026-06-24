@@ -62,8 +62,14 @@ h1, h2, h3, h4 {
 
 h1{font-size:20pt;}
 h2{font-size:18pt;}
-h3{font-size:15pt;}
-h4{font-size:14pt;}
+h3{
+  font-size:13pt;
+  font-color:#666666;
+}
+h4{
+  font-size:12.5pt;
+  font-color:#666666;
+}
 
 h3::before,h4::before {
   content: "*";
