@@ -78,8 +78,8 @@ h3::before,h4::before {
 p{
   color:#666666;
   font-family:Century Gothic;
+  font-size:12rem;
 }
-p.main{font-size:12rem;}
 
 p.novel{line-height:2em;}
 
