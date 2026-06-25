@@ -21,7 +21,7 @@
 					<p>{{ page.exception }}</p>
 					<hr/>
 					<div class="novel">
-						{{ content | strip_html | newline_to_br | split: '<br />' | join: '</p><p>' | prepend: '<p>' | append: '</p>' }}
+						{{ content | strip_html | Replace: "", "</p><p>" | newline_to_br | Replace: "<br />", "" | Replace: "</p><p>", "</p><p>" }}
 					</div>
 					{% if page.postscript %}
 					<hr/>
