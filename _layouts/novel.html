@@ -23,7 +23,7 @@
 					<div class="novel">
 						{% assign lines = content | strip_html | newline_to_br | split: '<br />' %}
 						{% for line in lines %}
-						{% if line == "LINE" %}
+						{% if line == "*" %}
 						<hr/>
 						{% else %}
 						<p>{{ line }}</p>
