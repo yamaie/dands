@@ -3,6 +3,7 @@ layout: novel
 title: 狐憑きの家
 exception: 三吉三 / 人外パロ / 現代
 update: 2011/04/21
+folder: bsr
 ---
 　――きさまはぎょうぶか、と狐が言った。
 　きれいな金色の目をした狐だった。
