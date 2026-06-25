@@ -13,6 +13,10 @@
 			<div class="main">
                 <main>
                     <h2>{{ page.title }}</h2>
+					{% if page.attention %}
+					<hr/>
+					<p{{ page.attention }}</p>
+					{% endif %}
 					<hr/>
 					<p>{{ page.exception }}</p>
 					<hr/>
