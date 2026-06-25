@@ -15,7 +15,7 @@
                     <h2>{{ page.title }}</h2>
 					{% if page.attention %}
 					<hr/>
-					<p{{ page.attention }}</p>
+					<p>{{ page.attention }}</p>
 					{% endif %}
 					<hr/>
 					<p>{{ page.exception }}</p>
@@ -23,6 +23,10 @@
 					<div class="novel">
 						{{ content | strip_html | newline_to_br | split: '<br />' | join: '</p><p>' | prepend: '<p>' | append: '</p>' }}
 					</div>
+					{% if page.attention %}
+					<hr/>
+					<p>{{ page.postscript }}</p>
+					{% endif %}
 					<hr/>
 					<p>{{ page.update }}</p>
 					<hr/>
