@@ -21,7 +21,10 @@
 					<p>{{ page.exception }}</p>
 					<hr/>
 					<div class="novel">
-						<p>{{ content | strip_html | Replace: "", "</p><p>" | newline_to_br | Replace: "<br />", "" | Replace: "</p><p>", "</p><p>" }}</p>
+						{% assign lines = content | strip_html | newline_to_br | split: '<br />' %}
+						{% for line in lines %}
+						<p>{{ line }}</p>
+						{% endfor %}
 					</div>
 					{% if page.postscript %}
 					<hr/>
