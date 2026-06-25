@@ -14,6 +14,10 @@ body{
   scrollbar-darkshadow-color:gray;
 }
 
+footer {
+  text-align: center;
+}
+
 div.wrapper{
   width:100%;
 }
