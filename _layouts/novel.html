@@ -20,7 +20,7 @@
 						{{ content | strip_html | newline_to_br | split: '<br />' | join: '</p><p>' | prepend: '<p>' | append: '</p>' }}
 					</div>
 					<hr/>
-					<p>{{ update }}</p>
+					<p>{{ page.update }}</p>
 					<hr/>
 					{% if page.pre_page %}
 					<a href="{{ page.pre_page | relative_url }}">←</a>&nbsp;
