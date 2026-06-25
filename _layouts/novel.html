@@ -1,19 +1,29 @@
 <!-- _layouts/novel.html -->
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <!-- 各ページで設定したタイトルが自動でここに入ります -->
-    <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="/assets/style.css">
-</head>
-<body>
-    <main class="novel-view">
-        <!-- ここに、各話の本文が自動的にガッチャンコされます -->
-        {{ content }}
-    </main>
-    <footer>
+  <head>
+		<title>{{ page.title }} - みずちとかがち</title>
+		<meta charset="utf-8">
+		<meta name=”robots” content=”noindex,nofollow”>
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes">
+		<link rel="stylesheet" href="../main.css"/>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="main">
+                <main>
+                    <h2>{{ page.title }}</h2>
+				<hr/>
+				<p>{{ page.exception }}</p>
+				<hr/>
+				<div class="novel">
+                    {{ content }}
+                </div>
+                </main>
+                    <footer>
         <p>©yamaie / Dragon and Snake</p>
-    </footer>
+                    </footer>
+            </div>
+        </div>
 </body>
 </html>
