@@ -13,17 +13,19 @@
 			<div class="main">
                 <main>
                     <h2>{{ page.title }}</h2>
-				<hr/>
-				<p>{{ page.exception }}</p>
-				<hr/>
-				<div class="novel">
-                    {{ content }}
-                </div>
-                </main>
-                    <footer>
-        <p>©yamaie / Dragon and Snake</p>
-                    </footer>
+					<hr/>
+					<p>{{ page.exception }}</p>
+					<hr/>
+					<div class="novel">
+						{{ content | strip_html | newline_to_br | split: '<br />' | join: '</p><p>' | prepend: '<p>' | append: '</p>' }}
+					</div>
+					<hr/>
+					<p>{{ update }}</p>
+				</main>
+				<footer>
+					<p>©yamaie / Dragon and Snake</p>
+				</footer>
             </div>
         </div>
-</body>
+	</body>
 </html>
