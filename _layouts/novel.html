@@ -23,7 +23,7 @@
 					<div class="novel">
 						{{ content | strip_html | newline_to_br | split: '<br />' | join: '</p><p>' | prepend: '<p>' | append: '</p>' }}
 					</div>
-					{% if page.attention %}
+					{% if page.postscript %}
 					<hr/>
 					<p>{{ page.postscript }}</p>
 					{% endif %}
