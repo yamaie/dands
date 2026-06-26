@@ -21,12 +21,12 @@
 					<p>{{ page.exception }}</p>
 					<hr/>
 					<div class="novel">
-						{% assign lines = content | strip_html | newline_to_br | split: '<br />' %}
+						{% assign lines = content | split: '' %}
 						{% for line in lines %}
 						{% assign stripped_line = line | strip %}
 						{% if stripped_line == "*" %}
 						<hr/>
-						{% else %}
+						{% elsif stripped_line != "" %}
 						<p>{{ line }}</p>
 						{% endif %}
 						{% endfor %}
