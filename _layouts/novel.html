@@ -4,7 +4,7 @@
   <head>
 		<title>{{ page.title }} - みずちとかがち</title>
 		<meta charset="utf-8">
-		<meta name=”robots” content=”noindex,nofollow”>
+		<meta name=”robots” content=”noindex,nofollow,noai,noimageai”>
 		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes">
 		<link rel="stylesheet" href="/dands/main.css"/>
 	</head>
@@ -21,17 +21,17 @@
 					<p>{{ page.exception }}</p>
 					<hr/>
 					<div class="novel">
-  {% capture newline %}
-{% endcapture %}
-  {% assign lines = content | split: newline %}
-  {% for line in lines %}
-    {% assign stripped_line = line | strip | strip_html %}
-    {% if stripped_line == "*" %}
-      <hr/>
-    {% elsif line != "" and line != " " %}
-      <p>{{ line }}</p>
-    {% endif %}
-  {% endfor %}
+						{% capture newline %}
+						{% endcapture %}
+						{% assign lines = content | split: newline %}
+						{% for line in lines %}
+						{% assign stripped_line = line | strip | strip_html %}
+						{% if stripped_line == "*" %}
+						<hr/>
+						{% elsif line != "" and line != " " %}
+						<p>{{ line }}</p>
+						{% endif %}
+						{% endfor %}
 					</div>
 					{% if page.postscript %}
 					<hr/>
