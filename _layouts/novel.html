@@ -26,9 +26,7 @@
 						{% assign lines = content | split: newline %}
 						{% for line in lines %}
 						{% assign stripped_line = line | strip | strip_html %}
-						{% if stripped_line == "*" %}
-						<hr/>
-						{% elsif line != "" and line != " " %}
+						{% if line != "" and line != " " %}
 						<p>{{ line }}</p>
 						{% endif %}
 						{% endfor %}
