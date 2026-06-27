@@ -21,8 +21,7 @@
 					<p>{{ page.exception }}</p>
 					<hr/>
 					<div class="novel">
-						{% assign processed_content = content | replace: '</p>', '[LINE_BREAK]' | replace: '<p>', '' | replace: '<br />', '[LINE_BREAK]' | replace: '<br>', '[LINE_BREAK]' %}
-						{% assign lines = processed_content | split: '[LINE_BREAK]' %}
+						{% assign lines = processed_content | split: '¥n' %}
 						{% for line in lines %}
 						{% assign stripped_line = line | strip %}
 						{% if stripped_line != "" and stripped_line != nil %}
