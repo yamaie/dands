@@ -21,13 +21,15 @@
 					<p>{{ page.exception }}</p>
 					<hr/>
 					<div class="novel">
-						{% assign lines = content | split: newline %}
-						{% for line in lines %}
-						{% assign stripped_line = line | strip %}
-						{% if stripped_line != "" and stripped_line != nil %}
-						<p>{{ stripped_line }}</p>
-						{% endif %}
-						{% endfor %}
+						{% capture newline %}
+{% endcapture %}
+{% assign lines = content | split: newline %}
+{% for line in lines %}
+{% assign stripped_line = line | strip %}
+{% if stripped_line != "" and stripped_line != nil %}
+<p>{{ stripped_line }}</p>
+{% endif %}
+{% endfor %}
 					</div>
 					{% if page.postscript %}
 					<hr/>
